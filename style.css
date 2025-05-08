@@ -94,6 +94,7 @@ nav a{
     top: 0;
     width: 100%;
     height: 615px;
+    filter: brightness(50%);
   
 }
 
@@ -237,6 +238,7 @@ i{
     padding: 20px;
     bottom: 70px;
     right: 70px;
+    z-index: 1;
    
     
 }
@@ -246,6 +248,89 @@ i{
     font-size: 50px;
     font-weight: 600;
     margin: 50px;
+}
+
+.all-img-page2{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 80vh;
+    justify-content: space-between;
+    padding: 60px;
+    
+}
+
+.all-img-page2 .img2-1 img,
+.all-img-page2 .img2-2 img,
+.all-img-page2 .img2-3 img,
+.all-img-page2 .img2-4 img{
+    position: relative;
+    width: 330px;
+    height: 380px;
+    object-fit: cover;
+    filter:brightness(40%) ;
+    
+}
+
+
+.all-img-page2 .img2-1 img{
+   object-position: -230px;
+   margin-top: 40px;
+}
+
+.program, .design, .programming, .technology   {
+    position: absolute;
+    z-index: 100;
+    bottom: 80px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.all-img-page2 .img2-2 img{
+    margin-top: 40px;
+}
+.all-img-page2 .img2-3 img{
+    object-position: -100px;
+    margin-top: 40px;
+}
+
+.all-img-page2 .img2-4 img{
+    object-position: -200px;
+}
+
+.img2-4 .see-all{
+    position: relative;
+    padding: 20px;
+}
+.img2-4 .see-all a{
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #f77e23;
+    text-decoration: none;
+    }
+
+.all-arrow{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.arrow-right, .arrow-left{
+    padding: 30px;
+    background-color: #f77e23;
+    color: white;
+    border-radius: 50px ;
+    
 }
 
 
@@ -277,6 +362,7 @@ i{
         gap: 50px;
         opacity: 0.9;
         transition: all 0.3s ease;
+       
     }
 
     .register button {
@@ -305,7 +391,18 @@ i{
         color: #020024;
     }
 
+    #arrow-up{
+        z-index: -1;
+        right: 0px;
+        margin: 40px;
+    }
 
+}
+
+@media (max-width: 890px){
+    #arrow-up{
+        display: none;
+    }
 }
 @media (max-width: 750px){
    
@@ -353,6 +450,10 @@ i{
         z-index: 10;
     }
 
+    #arrow-up{
+        display: none;
+
+    }
 }
 
 @media (width: 450px){
