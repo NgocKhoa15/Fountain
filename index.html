@@ -9,15 +9,23 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
+
+
     
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">
-                Fountain
+        <div class="bar-logo">
+            <div id="menu-toggle" class="bar">
+                <i id="bars-icon" class="fa-solid fa-bars"></i>
+                <i style="display: none;" id="close-icon" class="fa-solid fa-xmark"></i>
             </div>
-            <nav>
+            <div class="logo">
+                <h1>Fountain</h1>
+            </div>
+        </div>
+            <nav id="mobile-nav">
                 <ul>
                     <li>
                         <a href="">Home</a>
@@ -36,26 +44,34 @@
                     </li>
                 </ul>
             </nav>
-            <div class="modal">
+
+                 <!-- Only show when screen width 750px -->
+           
+            <div id="home-modal" class="modal">
                 <div class="search">
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
-
-               
                 <div class="login">
                     <a href="">Login</a>
                 </div>
                 <div class="register">
-                    <button>Register</button>
-            
-            </div>
-            </div>
+                    <button>Register</button> 
+             </div>
+        </div>
+            <!-- Only show when screen width 950px -->
+              <div id="menu-account" class="account">
+                <i id="account-icon" class="fa-regular fa-circle-user"></i>
+                <i style="display: none;" id="close-icon1" class="fa-solid fa-xmark"></i>
+            </div>  
+           
         </header>
     </div>
 
     <main>
+        <section>
         <div class="img1">
             <img src="./images/page1.png" alt="">
+            <i id="arrow-up" class="fa-solid fa-arrow-up"></i>
         </div>
         <div class="content1">
         <div class="p1">
@@ -67,8 +83,46 @@
         </div>
     </div>
 
+    <div class="button1">
+        <button>Get Started</button>
+    </div>
     
+    <div class="table1">
+    
+        <div class="content2">
+            <div class="live-chat">
+                <label for="name1">
+                    <div class="i1"><i class="fa-regular fa-comment-dots"></i></div></label>
+                <div id="name1">Live Chat</div> 
+            </div>
+
+            <div class="examination">
+                <label for="name2">
+                    <div class="i2"><i class="fa-solid fa-hands-asl-interpreting"></i></div></label>
+                <div id="name2">Examination</div>
+            </div>
+
+            <div class="competition">
+                <label for="name3">
+                    <div class="i3"><i class="fa-solid fa-user-group"></i></div></label>
+                <div id="name3">Competition</div>
+            </div>      
+    </div> 
+
+    
+       
+</div>
+        
+
+    
+    <div class="p3">
+        <p>Top cartegories</p>
+    </div>
+
+    
+</section>
+
     </main>
-    
+    <script src="./index.js"></script>
 </body>
 </html>

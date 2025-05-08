@@ -16,6 +16,7 @@ header{
     height: 96.43px;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 25px 0px 25px;
 }
 
 .body{
@@ -23,12 +24,12 @@ header{
     min-height: 100vh;
 }
 
-.logo{
+.logo h1{
     position: relative;
-    width: 126px;
+    /* width: 126px;
     height: 41px;
-    top: 5px;
-    left: 100px;
+    top: 5px; */
+    /* left: 130px; */
     font-size: 32.8px;
     font-weight: 600;
     line-height: 100%;
@@ -37,10 +38,16 @@ header{
 
 }
 
+.bar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 nav ul{
     position: relative;
-    left: 70px;
+    /* left: 60px; */
     display: flex;
     list-style: none;
     gap: 24px;
@@ -61,6 +68,7 @@ nav a{
     gap: 10px;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
 }
 
 .login a{
@@ -85,7 +93,8 @@ nav a{
     z-index: -1;
     top: 0;
     width: 100%;
-    height: 650px;
+    height: 615px;
+  
 }
 
 .content1{
@@ -113,3 +122,239 @@ nav a{
     
 }
 
+.button1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button1 button{
+    width: 120px;
+    height: 50px;
+    background-color: #FF6F28;
+    color: white;
+    border: none;
+    margin: 70px 0px 0px 0px;
+    border-radius: 10px;
+}
+
+.account{
+    display: none;
+    margin-right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+.bar{
+    display: none;
+    font-size: 28px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.table1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.content2{
+    display: flex;
+    background-color: white;
+    width: 700px;
+    height: 90px;
+    justify-content: space-around;
+    align-items: center;
+    top: 82%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 95px;
+    border-radius: 10px;
+}
+
+i{
+    color: #f77e23;
+}
+
+.i1{
+    padding: 7px;
+    font-size: 30px;
+    background-color: #FFE7DB;
+    border-radius: 100px;
+}
+
+.i2{
+    padding: 7px;
+    font-size: 30px;
+    background-color: #FFE7DB;
+    border-radius: 100px;
+}
+
+.i3{ padding: 7px;
+    font-size: 30px;
+    background-color: #FFE7DB;
+    border-radius: 100px;
+}
+
+.live-chat{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.examination{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.competition{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#arrow-up {
+    position: absolute;
+    background-color:#f77e23 ;
+    color: white;
+    border-radius: 50px ;
+    padding: 20px;
+    bottom: 70px;
+    right: 70px;
+   
+    
+}
+.p3 p{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 50px;
+}
+
+
+@media (max-width: 950px){
+    /* .container header .logo{
+       /* left: 50px; */
+    /* .container header .modal .search,
+    .container header .modal .login, 
+    .container header .modal .register{
+        display: none;
+
+    } */
+     .account #close-icon1{
+        position: relative;
+     }
+
+
+    .modal {
+        position: absolute;
+        position: fixed;
+        flex-direction: column;
+        right: -100%;
+        margin: 0;
+        top: 0;
+        font-size: 30px;
+        background: #020024;
+        background: linear-gradient(1deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 47%, rgba(19, 71, 168, 1) 72%, rgba(0, 212, 255, 1) 100%);        width: 100%;
+        height: 100vh;
+        gap: 50px;
+        opacity: 0.9;
+        transition: all 0.3s ease;
+    }
+
+    .register button {
+        font-size: 30px;
+        background-color: transparent;
+    }
+    .modal.active{
+        right: 0;
+    }
+
+    .account{
+        display: block;
+    }
+    
+
+    .account .close-icon1{
+        position: relative;
+        z-index: 100;
+    }
+
+    .bar{
+        display: none;
+    }
+
+    #close-icon1{
+        color: #020024;
+    }
+
+
+}
+@media (max-width: 750px){
+   
+    /* .container header nav{
+        display: none;
+    } */
+
+    nav{
+        position: fixed;
+        right: -100%;
+        top: 0;
+        background: #421cbd;
+        background: radial-gradient(circle, rgba(66, 28, 189, 1) 0%, rgba(60, 113, 117, 1) 34%, rgba(161, 140, 48, 1) 67%, rgba(127, 191, 54, 1) 100%);
+        height: 100vh;
+        width: 100%;
+        justify-items: center;
+        align-content: center;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+    }
+
+    nav.active{
+        right: 0; 
+    }
+
+    nav ul{
+        gap: 50px   ;
+        flex-direction: column;
+         
+    }
+
+    nav ul li a{
+        color: rgb(255, 0, 0);
+        font-size: 30px;
+    }
+
+    .bar{
+        display: block;
+        
+    }
+    
+    #close-icon{
+        position: relative;
+        color: #020024;
+        z-index: 10;
+    }
+
+}
+
+@media (width: 450px){
+   
+}
